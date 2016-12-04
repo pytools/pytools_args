@@ -12,7 +12,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 setup(
     name='pytools-args',
 
-    version='0.0.1',
+    version='0.1.0',
 
     description='A small helper module for detecting, evaluating and processing arguments.',
     long_description=long_description,
