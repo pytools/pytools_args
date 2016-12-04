@@ -1,9 +1,6 @@
-venv:
-	-rm -rf venv
-	virtualenv -p python3 venv
-
-install:
-	venv/bin/pip install -r requirements.txt
+init:
+	make venv
+	make install
 
 test:
 	venv/bin/python -m unittest discover
@@ -20,6 +17,13 @@ release-minor:
 release-patch:
 	bumpversion patch
 
+venv:
+	-rm -rf venv
+	virtualenv -p python3 venv
+
+install:
+	venv/bin/pip install -r requirements.txt
+
 clean:
 	-ln -sfn ~/vagrant/.pypirc ~/.pypirc
 	-rm -rf build
@@ -35,4 +39,4 @@ upload:
 	python setup.py sdist bdist_wheel
 	twine upload dist/*
 
-.PHONY: venv install test requirements clean register upload
+.PHONY: init test venv install requirements clean register upload

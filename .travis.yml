@@ -8,6 +8,5 @@ python:
   - "3.5"
 
 script:
-  - make venv
-  - make install
+  - make init
   - make test

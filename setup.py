@@ -10,14 +10,14 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='pytools_args',
+    name='pytools-args',
 
     version='0.0.1',
 
     description='A small helper module for detecting, evaluating and processing arguments.',
     long_description=long_description,
 
-    url='https://github.com/pytools/pytools_args',
+    url='https://github.com/pytools/pytools-args',
 
     author='Richard King',
     author_email='richrdkng@gmail.com',
