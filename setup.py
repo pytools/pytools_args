@@ -40,7 +40,7 @@ setup(
         'Programming Language :: Python :: 3.5',
     ],
 
-    keywords='arguments args pytools development',
+    keywords='arguments argument args pytools development',
 
     packages=find_packages(exclude=('docs', 'tests')),
 

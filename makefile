@@ -3,10 +3,10 @@ venv:
 	virtualenv -p python3 venv
 
 install:
-	pip install -r requirements.txt
+	venv/bin/pip install -r requirements.txt
 
 test:
-	python -m unittest discover
+	venv/bin/python -m unittest discover
 
 requirements:
 	pip freeze > requirements.txt
